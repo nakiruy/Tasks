@@ -1,5 +1,5 @@
-# React Boilerplate
-  > A very simple boilerplate utilizing React on the client-side and Node.js/Express on server-side. 
+# Tasks
+  > An application for creating tasks! 
 
 ## Running locally ##
 
