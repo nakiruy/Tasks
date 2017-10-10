@@ -1,8 +1,6 @@
 import React from 'react';
 import axios from 'axios';
 
-import Save from './Save';
-import New from './New';
 
 class App extends React.Component {
   constructor(props) {
@@ -14,12 +12,12 @@ class App extends React.Component {
 
   componentDidMount() {
     axios.get('http://cfassignment.herokuapp.com/yurika/tasks')
-      .then((res) => {
+      .then(res => {
         console.log('these are the tasks', res);
         this.setState({tasks: res.data});
         console.log('this is the state of tasks now', this.state.tasks)
       })
-      .catch((err) => {
+      .catch(err => {
         console.log('this is the error', err);
       })
   }
@@ -35,7 +33,7 @@ class App extends React.Component {
       <div>
         <h1>Tasks</h1>
         <button type="button">Save</button>
-        <New />
+        <button type="button">New Task</button>
         <li>{this.state.tasks.tasks}</li>
       </div>
     )
