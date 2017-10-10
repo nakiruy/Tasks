@@ -25,6 +25,7 @@ class App extends React.Component {
     return (
       <div>
         Tasks
+        <li>{this.state.tasks.tasks}</li>
       </div>
     )
   }
