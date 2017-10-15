@@ -9,10 +9,13 @@ class Task extends React.Component {
   }
 
 
+
   render() {
     return (
       <div>
-        
+        <form className="task">
+         <button className="button" id="add" type="add">Add Task</button>
+        </form>
       </div>
     )
   }
