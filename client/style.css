@@ -65,7 +65,19 @@ button#save {
 .task-title {
   position: relative;
   font-size: 12px;
-  padding: 20px;
   color: #a9a9a9;
+  display: inline-block;
+  margin: 10px;
 }
 
+.fa.fa-trash-o {
+  position: relative;
+  display: inline;
+  opacity: 0.3;
+  float: right;
+}
+
+.fa.fa-th {
+  opacity: 0.3;
+  margin: 10px;
+}

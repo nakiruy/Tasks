@@ -51,7 +51,9 @@ class App extends React.Component {
           <Save />
           <Add />
           <div className="task">
+            <i class="fa fa-th" aria-hidden="true"></i>
             <h3 className="task-title">TASK</h3>
+            <i class="fa fa-trash-o" aria-hidden="true"></i>
           </div>
         </div>
       </div>
