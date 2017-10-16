@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import axios from 'axios';
 
 import Task from './Task';
+import Add from './Add';
 import Save from './Save';
 
 
@@ -47,8 +48,11 @@ class App extends React.Component {
         <nav className="navbar"></nav>
         <div className="container">
           <h1 className="title">Tasks</h1>
-          <Task props={this.state.tasks} />
           <Save />
+          <Add />
+          <div className="task">
+            <h3 className="task-title">TASK</h3>
+          </div>
         </div>
       </div>
     )

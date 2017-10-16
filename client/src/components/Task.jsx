@@ -12,9 +12,7 @@ class Task extends React.Component {
   render() {
     return (
       <div>
-        <form onSubmit={this.addTask} className="task">
-         <button className="button" id="add" type="add">Add Task</button>
-        </form>
+        <li>Hey</li>
       </div>
     )
   }

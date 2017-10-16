@@ -11,9 +11,11 @@ class Save extends React.Component {
   render() {
     return (
       <div>
-        <form action='http://cfassignment.herokuapp.com/yurika/tasks' method='post'>
-          <button className="button" id="save" type="save">Save</button>
-        </form>
+        <span>
+          <form action='http://cfassignment.herokuapp.com/yurika/tasks' method='post'>
+            <button className="button" id="save" type="save">Save</button>
+          </form>
+        </span>
       </div>
     )
   }

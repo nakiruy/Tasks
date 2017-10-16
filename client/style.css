@@ -6,6 +6,13 @@ body {
   margin-top: 100px;
 }
 
+.title {
+  display: inline;
+  font-size: 30px;
+  font-weight: 600;
+  color: #081426;
+}
+
 .navbar {
   position: absolute;
   width: 100%;
@@ -15,6 +22,10 @@ body {
   top: 0;
 } 
 
+.buttons-container {
+  float: right;
+}
+
 .button {
   border: none;
   color: white;
@@ -23,15 +34,38 @@ body {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 20px;
+  margin: 10px;
+  margin-top: -37px;
   border-radius: 5px;
+  float: right;
 }
 
 button#add {
-  background: #3a3b3c;
+  background: #737477;
 }
 
 button#save {
   background: #5cb85c;
+}
+
+.task {
+  padding: 100px;
+  background: white;
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 50px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e8e8e8;
+  box-shadow: 1px 1px 1px #a9a9a9;
+  padding-left: 0;
+  padding-top: 0;
+}
+
+.task-title {
+  position: relative;
+  font-size: 12px;
+  padding: 20px;
+  color: #a9a9a9;
 }
 
