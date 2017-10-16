@@ -43,17 +43,14 @@ class App extends React.Component {
 
   render() {
     return (
+      <div>
+        <nav className="navbar"></nav>
         <div className="container">
-            <div className="row mt-1 mb-4">
-              <div className="col">
-                <h1 className="display-1">Tasks</h1>
-              </div>
-            </div>
-          <div className="row">
-            <Task props={this.state.tasks} />
-            <Save />
-          </div>
+          <h1 className="title">Tasks</h1>
+          <Task props={this.state.tasks} />
+          <Save />
         </div>
+      </div>
     )
   }
 }
