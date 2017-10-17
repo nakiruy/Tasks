@@ -13,6 +13,7 @@ class App extends React.Component {
     this.state = {
       tasks: []
     };
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   componentDidMount() {
@@ -35,8 +36,11 @@ class App extends React.Component {
     e.preventDefault();
 
     axios.post('http://cfassignment.herokuapp.com/yurika/tasks')
-      .then(() => {
-        this.getTasks();
+      .then(res => {
+        console.log('these are the tasks after saving', res);
+      })
+      .catch(err => {
+        console.log('this is the error after saving', err);
       })
   }
 
@@ -48,13 +52,11 @@ class App extends React.Component {
         <nav className="navbar"></nav>
         <div className="container">
           <h1 className="title">Tasks</h1>
-          <Save />
-          <Add />
-          <div className="task">
-            <i class="fa fa-th" aria-hidden="true"></i>
-            <h3 className="task-title">TASK</h3>
-            <i class="fa fa-trash-o" aria-hidden="true"></i>
-          </div>
+          <Save onClick={this.handleSubmit}/>
+          <Add props={this.state.task}/>
+          <Task />
+          <Task />
+          <Task />
         </div>
       </div>
     )

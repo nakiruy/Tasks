@@ -72,9 +72,11 @@ button#save {
 
 .fa.fa-trash-o {
   position: relative;
-  display: inline;
+  display: inline-block;
   opacity: 0.3;
   float: right;
+  margin: 10px;
+  margin-right: -80px;
 }
 
 .fa.fa-th {
